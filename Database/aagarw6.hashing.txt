@@ -1,0 +1,52 @@
+used to create index using hash indices
+create index teaches_index USING HASH ON university2.teaches (ID(5) ASC);
+
+create index teaches_index USING HASH ON university2.instructor (ID(5) ASC);
+
+create index teaches_index USING HASH ON university1.teaches (ID(5) ASC);
+
+create index teaches_index USING HASH ON university1.instructor (ID(5) ASC);
+
+
+
+
+used to create index using B-Tree indices
+create index teaches_index USING BTREE ON university2.teaches (ID(5) ASC);
+
+create index teaches_index USING BTREE ON university2.instructor (ID(5) ASC);
+
+create index teaches_index USING BTREE ON university1.teaches (ID(5) ASC);
+
+create index teaches_index USING BTREE ON university1.instructor (ID(5) ASC);
+
+
+before using indices the timing for query processing was
+university1
+query 1: 0.000 sec
+query 2: 0.047 sec
+
+university2
+
+query 1: 0.015 sec
+query 2: 0.203 sec
+
+
+after using B-Tree Index
+University1
+query 1: 0.010 sec
+query 2: 0.031 sec
+
+university2
+query 1: 0.016 sec
+query 2: 0.188 sec
+
+
+
+after using Hashing
+university1
+query 1: 0.000 sec
+query 2: 0.047 sec
+
+university2
+query 1: 0.016 sec
+query 2: 0.188 sec

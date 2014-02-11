@@ -1,0 +1,72 @@
+Using  MYISAM()
+
+University1
+
+Query results without using hash or b-tree
+Query1: 0.00488875
+Query2: 0.10061550
+
+Query results with hash application
+Query1: 0.01260675
+Query2: 0.05621725
+
+Query results with b-tree application
+Query1: 0.00412200
+Query2: 0.05558675
+
+University2
+
+Query results without using hash or b-tree
+Query1: 0.01186700
+Query2: 0.18881000
+
+Query results with hash application
+Query1: 0.01149100
+Query2: 0.16800375
+
+Query results with b-tree application
+Query1: 0.03480900
+Query2: 0.16132325
+
+
+
+Using  MEMORY
+
+University1
+
+Query results without hash or b-tree application
+Query1: 0.00190450
+Query2: 0.01634325
+
+Query results with hash application
+Query1: 0.00257075
+Query2: 0.02413650
+
+Query results with b-tree application
+Query1: 0.00199100
+Query2: 0.01767125
+
+University2
+
+Query results without hash or b-tree application
+Query1: 0.08562900
+Query2: 0.03965700
+
+Query results with hash application
+Query1: 0.00524375
+Query2: 0.07023525
+
+Query results with b-tree application
+Query1: 0.00530250
+Query2: 0.04562650
+
+
+
+
+
+
+
+
+
+
+
